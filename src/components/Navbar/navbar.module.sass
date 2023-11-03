@@ -1,13 +1,24 @@
 .navbar
-  width: 100vw
   position: fixed
-  background: #303030
+  width: 100%
+  background: #252525
   display: flex
   flex-direction: row
   justify-content: space-between
-  div
+  .logo
     padding: 10px
-
-.buttons
-  a
-    padding: 0px 8px
+    &>a
+      transition: 220ms
+      &:hover
+        color: #9e3838
+  .buttons
+    display: flex
+    &>a
+      padding: 5px 15px
+      display: flex
+      align-items: center
+      border: none
+      transition: 220ms
+      &:hover
+        background: #722727
+      
